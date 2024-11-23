@@ -80,7 +80,7 @@ body {
   height: 100%;
   width: 100%;
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   top: 50%;
   left: 50%;
   translate: -50% -50%;
@@ -91,6 +91,35 @@ body {
     yellow,
     red
   );
+  animation: spin 5s linear infinite;
+  /* filter: blur(10px); */
+  /* border-radius: 50%; */
+  /* opacity: 0.7;   */
+}
+.cards {
+  position: relative;
+  /* padding: 1.5px; */
+}
+
+.cards::after,
+.cards::before {
+  content: "";
+  height: 102%;
+  width: 102%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  translate: -50% -50%;
+  background-image: conic-gradient(
+    from var(--angle),
+    red,
+    rgb(140, 140, 246),
+    yellow,
+    red
+  );
+  scale: 10px 20px;
   animation: spin 5s linear infinite;
   /* filter: blur(10px); */
   /* border-radius: 50%; */

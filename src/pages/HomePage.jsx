@@ -4,7 +4,7 @@ import asserts from "../assets/assests";
 const HomePage = () => {
   return (
     <main className="h-[90vh] w-screen bg-black text-white flex items-center">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-6">
+      <div className="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-8 px-6">
         <div className="max-w-lg text-center md:text-left">
           <h1 className="text-4xl md:text-5xl font-extrabold text-white">
             Hi, I’m
@@ -26,7 +26,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="photo w-40 h-40 md:w-96 md:h-96 rounded-full flex items-center justify-center border-white  z-0">
+        <div className="photo w-52 h-52  md:w-96 md:h-96 rounded-full flex items-center justify-center border-white  z-0">
           <img
             src={asserts.suthesh}
             alt="Suthesh Pravin"
